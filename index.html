@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+
+    <title>UFO Sightings</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="static/css/styles.css">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <div class='container form-container'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <form>
+                    <div class='form-group'>
+                        <label for='user-form'><strong>Date Filter</strong></label>
+                        <input class='form-control'
+                               id='user-form-input'
+                               name='user-form'
+                               type='text'
+                               placeholder='mm/dd/yyyy OR m/d/yyyy'>
+                    </div>
+                    <button id='submit-button'
+                            type='button'
+                            class='btn btn-secondary'>Submit</button>
+                    <button id='reset-button'
+                            type='button'
+                            class='btn btn-secondary'>Reset</button>
+                </form>
+            </div>
+        </div>
+        <div class='row'
+             id='error-row'>
+            <div class='col-md-12'>
+                <strong>DATE ENTERED MUST BE IN FORMAT MM/DD/YYYY OR M/D/YYYY</strong>
+                <br>
+                <strong>CLICK RESET BUTTON TO START AGAIN</strong>
+            </div>
+        </div>
+    </div>
+    <div class='container table-container'>
+        <table class='table table-striped'
+               id='ufoTable'>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>Duration</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+<script src="static/js/data.js"></script>
+<script src="static/js/index.js"></script>
+
+</html>
