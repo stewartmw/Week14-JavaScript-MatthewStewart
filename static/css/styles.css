@@ -1,15 +1,57 @@
+html {
+    background: url("../../images/ufo_pic_formatted.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    background: transparent;
+}
+
+.container {
+    border: 1px solid green;
+    background-color: rgba(106, 155, 106, 0.6);
+}
+
+.intro-container {
+    border-bottom: none;
+}
+
+.page-header {
+    text-align: center;
+    font-family: cursive;
+    font-size: 4em;
+}
+
+p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.paragraph-one {
+    margin-top: 2vh;
+}
+
 .form-container {
-    height: 10vh;
+    height: 25vh;
+    border-top: none;
+    padding-top: 2vh;
 }
 
 #error-row {
     margin-top: 2vh;
-    color: red;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
 }
 
 .table-container {
     position: relative;
-    margin-top: 12vh;
+    margin-top: 9vh;
     margin-left: auto;
     margin-right: auto;
     height: 70vh;
@@ -23,4 +65,8 @@ table {
 
 th {
     text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(94, 153, 94, 0.6);
 }

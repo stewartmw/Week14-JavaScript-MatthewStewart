@@ -22,33 +22,83 @@
 </head>
 
 <body>
-    <div class='container form-container'>
+    <div class='container intro-container'>
         <div class='row'>
             <div class='col-md-12'>
-                <form>
-                    <div class='form-group'>
-                        <label for='user-form'><strong>Date Filter</strong></label>
-                        <input class='form-control'
-                               id='user-form-input'
-                               name='user-form'
-                               type='text'
-                               placeholder='mm/dd/yyyy OR m/d/yyyy'>
-                    </div>
-                    <button id='submit-button'
-                            type='button'
-                            class='btn btn-secondary'>Submit</button>
-                    <button id='reset-button'
-                            type='button'
-                            class='btn btn-secondary'>Reset</button>
-                </form>
+                <h1 class='page-header'>
+                    <strong><em>UFO Sightings</em></strong>
+                </h1>
+                <p class='paragraph-one'>
+                    Multiple UFO sightings were reported over the course of two weeks in January 2010. The data you see
+                    below documents the details concerning these sightings.
+                </p>
+                <p class='paragraph-two'>
+                    Alternatively, you can use any combination of the form fields below to filter the data. If you do
+                    not want to use a particular filter, leave that field blank. Click the "Submit" button to filter the
+                    data. Click the "Reset" button to remove all filters.
+                </p>
+                <p>
+                    <strong>The truth is out there...</strong>
+                </p>
             </div>
         </div>
+    </div>
+    <div class='container form-container'>
+        <form>
+            <div class='form-row'>
+                <div class='form-group col-md-6'>
+                    <label for='user-date'><strong>Date</strong></label>
+                    <input class='form-control'
+                           id='user-date-input'
+                           name='user-date'
+                           type='text'
+                           placeholder='mm/dd/yyyy OR m/d/yyyy'>
+                </div>
+                <div class='form-group col-md-6'>
+                    <label for='user-shape'><strong>Shape</strong></label>
+                    <select class='form-control'
+                            id='user-shape-input'
+                            name='user-shape'
+                            placeholder=''>
+                    </select>
+                </div>
+            </div>
+            <div class='form-row'>
+                <div class='form-group col-md-4'>
+                    <label for='user-city'><strong>City</strong></label>
+                    <select class='form-control'
+                            id='user-city-input'
+                            name='user-city'>
+                    </select>
+                </div>
+                <div class='form-group col-md-4'>
+                    <label for='user-state'><strong>State</strong></label>
+                    <select class='form-control'
+                            id='user-state-input'
+                            name='user-state'>
+                    </select>
+                </div>
+                <div class='form-group col-md-4'>
+                    <label for='user-country'><strong>Country</strong></label>
+                    <select class='form-control'
+                            id='user-country-input'
+                            name='user-country'>
+                    </select>
+                </div>
+            </div>
+            <button id='submit-button'
+                    type='button'
+                    class='btn btn-secondary'>Submit</button>
+            <button id='reset-button'
+                    type='button'
+                    class='btn btn-secondary'>Reset</button>
+        </form>
         <div class='row'
              id='error-row'>
             <div class='col-md-12'>
-                <strong>DATE ENTERED MUST BE IN FORMAT MM/DD/YYYY OR M/D/YYYY</strong>
+                <strong><em>DATE ENTERED MUST BE IN FORMAT MM/DD/YYYY OR M/D/YYYY</em></strong>
                 <br>
-                <strong>CLICK RESET BUTTON TO START AGAIN</strong>
+                <strong><em>CLICK RESET BUTTON TO START AGAIN</em></strong>
             </div>
         </div>
     </div>
